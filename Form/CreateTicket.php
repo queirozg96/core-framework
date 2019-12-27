@@ -60,6 +60,15 @@ class CreateTicket extends AbstractType
             ],
         ]);
 
+        // Ticket Candidact
+        $builder->add('candidact', TextType::class, [
+            'required' => true,
+            'label' => 'Candidact',
+            'attr' => [
+                'placeholder' => 'Enter Candidact'
+            ],
+        ]);
+
         // Ticket Query Message
         $builder->add('reply', TextareaType::class, [
             'label' => 'Message',
